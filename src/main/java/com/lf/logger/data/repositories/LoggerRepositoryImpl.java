@@ -17,22 +17,22 @@ public class LoggerRepositoryImpl implements LoggerRepository {
     }
 
     @Override
-    public void e(String UTCTime, String machineName, String tag, String context, String message) {
-        loggerDataSource.filePrint(UTCTime, machineName, tag, context, message);
+    public void e(String UTCTime, String tag, String context, String message) {
+        loggerDataSource.filePrint(UTCTime, tag, context, message);
     }
 
     @Override
-    public void i(String UTCTime, String machineName, String tag, String context, String message) {
-        loggerDataSource.filePrint(UTCTime, machineName, tag, context, message);
+    public void i(String UTCTime, String tag, String context, String message) {
+        loggerDataSource.filePrint(UTCTime, tag, context, message);
     }
 
     @Override
-    public void w(String UTCTime, String machineName, String tag, String context, String message) {
-        loggerDataSource.filePrint(UTCTime, machineName, tag, context, message);
+    public void w(String UTCTime, String tag, String context, String message) {
+        loggerDataSource.filePrint(UTCTime, tag, context, message);
     }
 
     @Override
-    public void d(String UTCTime, String machineName, String tag, String context, String message) {
-        loggerDataSource.stdPrint(UTCTime, machineName, tag, context, message);
+    public void d(String UTCTime, String tag, String context, String message) {
+        loggerDataSource.stdPrint(UTCTime, tag, context, message);
     }
 }

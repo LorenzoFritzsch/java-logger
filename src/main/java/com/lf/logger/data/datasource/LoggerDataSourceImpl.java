@@ -8,13 +8,13 @@ public class LoggerDataSourceImpl implements LoggerDataSource{
     private LoggerDataSourceImpl(){}
 
     @Override
-    public void stdPrint(String UTCTime, String machineName, String tag, String context, String message) {
+    public void stdPrint(String UTCTime, String tag, String context, String message) {
         System.out.println(UTCTime + " " + tag + " " + context + " " + message);
     }
 
     @Override
-    public void filePrint(String UTCTime, String machineName, String tag, String context, String message) {
-        stdPrint(UTCTime, machineName, tag, context, message);
+    public void filePrint(String UTCTime, String tag, String context, String message) {
+        stdPrint(UTCTime, tag, context, message);
         //TODO: Write in the file
     }
 }
