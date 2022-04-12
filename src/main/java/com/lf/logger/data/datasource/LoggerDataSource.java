@@ -1,6 +1,5 @@
 package com.lf.logger.data.datasource;
 
-import org.springframework.stereotype.Component;
 
 /**
  *
@@ -8,7 +7,7 @@ import org.springframework.stereotype.Component;
  *
  */
 
-@Component
+
 public interface LoggerDataSource {
 
     /**

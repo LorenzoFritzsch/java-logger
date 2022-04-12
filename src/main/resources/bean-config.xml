@@ -12,4 +12,20 @@
 
     <bean id="loggerDS" class="com.lf.logger.data.datasource.LoggerDataSourceImpl" />
 
+    <bean id="debugUseCase" class="com.lf.logger.domain.usecases.DebugUseCase">
+        <constructor-arg name="repository" ref="loggerRepositoryImpl"/>
+    </bean>
+
+    <bean id="errorUseCase" class="com.lf.logger.domain.usecases.ErrorUseCase">
+        <constructor-arg name="repository" ref="loggerRepositoryImpl"/>
+    </bean>
+
+    <bean id="infoUseCase" class="com.lf.logger.domain.usecases.InfoUseCase">
+        <constructor-arg name="repository" ref="loggerRepositoryImpl"/>
+    </bean>
+
+    <bean id="warningUseCase" class="com.lf.logger.domain.usecases.WarningUseCase">
+        <constructor-arg name="repository" ref="loggerRepositoryImpl"/>
+    </bean>
+
 </beans>
