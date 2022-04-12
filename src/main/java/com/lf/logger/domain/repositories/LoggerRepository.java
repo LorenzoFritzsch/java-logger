@@ -16,7 +16,7 @@ public interface LoggerRepository {
      * @param context the specific context
      * @param message the message explaining the error
      */
-    void e(String UTCTime, String tag, String context, String message); //TODO: Add machine name for fleet management
+    void e(String UTCTime, String tag, String context, String message);
 
 
     /**
