@@ -1,11 +1,14 @@
 package com.lf.logger.data.datasource;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * Logger Data Source interface, to define every action possible
  *
  */
 
+@Component
 public interface LoggerDataSource {
 
     /**
